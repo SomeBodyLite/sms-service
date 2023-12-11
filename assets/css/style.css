@@ -301,4 +301,5 @@ form {
   line-height: 130%;
   letter-spacing: 17px;
   width: 100%;
+  transform: translateX(8px);
 }
