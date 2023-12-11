@@ -36,12 +36,15 @@
                   placeholder="Password"
                   id="reg_password"
                   name="password"
+                  minlength="4"
+                  pattern="[0-9a-fA-F]{4,8}"
+                  autocomplete="off"
                   required
+                  title="Введите пароль состоящий из 1 заглавной, 1 прописной, 1 цифры"
                 />
                 <button
                   class="shownpass hidden view"
                   id="shownpass"
-         
                   type="button"
                 ></button>
               </label>
@@ -56,7 +59,6 @@
                 <button
                   class="shownpass hidden view"
                   id="shownpass"
-                 
                   type="button"
                 ></button>
               </label>
