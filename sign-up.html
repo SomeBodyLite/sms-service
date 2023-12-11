@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>SMS Verified — Sign Up</title>
+  </head>
+  <body class="sign h100 center">
+    <section class="signup">
+      <div class="container">
+        <div class="sign-content flex-column">
+          <div class="sign-logo flex-center">
+            <img src="/assets/images/logo.svg" alt="" />
+          </div>
+          <div class="sign-block">
+            <form action="#">
+              <h1 class="title">Registration</h1>
+              <p class="text">Fill in the fields and register on our service</p>
+              <label class="form-item">
+                <input
+                  type="email"
+                  class="form-input"
+                  placeholder="Email"
+                  id="reg_email"
+                  name="login"
+                  required
+                  title="Enter correct email"
+                />
+              </label>
+              <label class="form-item">
+                <input
+                  type="password"
+                  class="form-input password-input"
+                  placeholder="Password"
+                  id="reg_password"
+                  name="password"
+                  required
+                />
+                <button
+                  class="shownpass hidden view"
+                  id="shownpass"
+         
+                  type="button"
+                ></button>
+              </label>
+              <label class="form-item invalid">
+                <input
+                  type="password"
+                  class="form-input password-input"
+                  placeholder="Repeat password"
+                  id="reg_repeat_password"
+                  required
+                />
+                <button
+                  class="shownpass hidden view"
+                  id="shownpass"
+                 
+                  type="button"
+                ></button>
+              </label>
+              <input type="submit" value="Confirm" class="form-button w100" />
+            </form>
+            <div class="sign-alternate">
+              <a href="#" class="alternate-item">
+                <img
+                  class="alternate-img"
+                  src="/assets/images/services/google.svg"
+                  alt="google"
+                />
+                <p class="text">Registration</p>
+              </a>
+              <a href="#" class="alternate-item">
+                <img
+                  class="alternate-img"
+                  src="/assets/images/services/facebook.svg"
+                  alt="facebook"
+                />
+                <p class="text">Registration</p>
+              </a>
+            </div>
+            <p class="text">
+              If you are registered,
+              <a class="link" href="sign-in.html">Login</a>
+            </p>
+            <a class="close-sign" href="index.html"
+              ><img src="/assets/images/close.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/assets/js/login-script.js"></script>
+  </body>
+</html>

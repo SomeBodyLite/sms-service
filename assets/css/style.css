@@ -1,0 +1,304 @@
+@font-face {
+  font-family: 'Lab Grotesque';
+  src: url('/assets/fonts/LabGrotesque-Regular.eot');
+  src: local('/assets/fonts/Lab Grotesque Regular'), local('/assets/fonts/LabGrotesque-Regular'),
+    url('/assets/fonts/LabGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/LabGrotesque-Regular.woff2') format('woff2'),
+    url('/assets/fonts/LabGrotesque-Regular.woff') format('woff'),
+    url('/assets/fonts/LabGrotesque-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque';
+  src: url('/assets/fonts/LabGrotesque-Medium.eot');
+  src: local('/assets/fonts/Lab Grotesque Medium'), local('/assets/fonts/LabGrotesque-Medium'),
+    url('/assets/fonts/LabGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/LabGrotesque-Medium.woff2') format('woff2'),
+    url('/assets/fonts/LabGrotesque-Medium.woff') format('woff'),
+    url('/assets/fonts/LabGrotesque-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque';
+  src: url('/assets/fonts/LabGrotesque-Bold.eot');
+  src: local('/assets/fonts/Lab Grotesque Bold'), local('/assets/fonts/LabGrotesque-Bold'),
+    url('/assets/fonts/LabGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/LabGrotesque-Bold.woff2') format('woff2'),
+    url('/assets/fonts/LabGrotesque-Bold.woff') format('woff'),
+    url('/assets/fonts/LabGrotesque-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --Line: #DDE6EF;
+}
+input[type="number"] {
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+}
+ 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+a:focus {
+  outline: none;
+}
+
+body {
+  font-family: 'Lab Grotesque';
+}
+
+body.h100 {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body.center {
+  justify-content: center;
+}
+
+body.sign {
+  background-image: url(/assets/images/sign-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body.sign .container {
+  max-width: 420px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.d-none {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-logo {
+  margin-bottom: 25px;
+}
+
+.sign-block {
+  border-radius: 12px;
+  border: 1px solid var(--Line, #DDE6EF);
+  background: linear-gradient(139deg, #FFF 23.11%, rgba(255, 255, 255, 0.00) 98.47%);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.sign-block form {
+  gap: 17px;
+}
+
+.close-sign {
+  position: absolute;
+  right: 12px;
+  top: 24px;
+}
+
+h1.title {
+  color: #171A2F;
+  text-align: center;
+  font-family: Lab Grotesque;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+p.text {
+  color: #5C607C;
+  text-align: center;
+  font-family: Lab Grotesque;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.form-item {
+  border-radius: 6px;
+  border: 1px solid #DBDBDB;
+  background: rgba(92, 96, 124, 0.10);
+  padding: 12px 16px;
+  color: #171A2F;
+  font-family: Lab Grotesque;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  position: relative;
+  width: 100%;
+}
+
+.form-input {
+  font-family: inherit;
+  background: none;
+  border: none;
+  width: 100%;
+}
+
+.form-item.invalid {
+  border-radius: 6px;
+  border: 1px solid #FF7ECC;
+  background: rgba(255, 126, 204, 0.10);
+}
+
+.form-item.invalid input {
+  color: #FF7ECC;
+
+}
+
+/* .form-item:is(>input:focus).invalid {
+  border: 1px solid #DBDBDB;
+  background: rgba(92, 96, 124, 0.10);
+  color: #171A2F;
+} */
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shownpass {
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 22px;
+  background-image: url(../images/hide_hide.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 66px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.shownpass.hidden {
+  visibility: hidden;
+}
+
+.shownpass.view {
+  background-image: url(../images/hide_show.svg);
+}
+
+.form-button {
+  border: none;
+  font-family: inherit;
+  padding: 12px;
+  border-radius: 6px;
+  background: #0057FF;
+  color: var(--white, #FFF);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.sign-alternate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 5px;
+}
+
+.alternate-item {
+  border-radius: 15px;
+  border: 1px solid #DADADA;
+  background: #F2F2F2;
+  display: flex;
+  padding: 9px;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.alternate-img {
+  height: 24px;
+  width: 24px;
+}
+
+.sign-alternate .text {
+  color: #171A2F;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.link {
+  color: #0057FF;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-decoration-line: underline;
+}
+
+.auth .sign-block {
+  padding: 52px 24px;
+}
+
+.auth-code {
+  border: none;
+  background: none;
+  color: #000;
+  text-align: center;
+  font-family: Lab Grotesque;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 17px;
+  width: 100%;
+}

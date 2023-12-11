@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>SMS Verified — Sign In</title>
+  </head>
+  <body class="sign h100 center">
+    <section class="signin ">
+      <div class="container">
+        <div class="sign-content flex-column">
+          <div class="sign-logo flex-center">
+            <img src="/assets/images/logo.svg" alt="" />
+          </div>
+          <div class="sign-block">
+            <form action="auth.html">
+              <h1 class="title">Authorization</h1>
+              <p class="text">We are glad to see you again on our platform!</p>
+              <label class="form-item">
+                <input
+                  type="email"
+                  class="form-input"
+                  placeholder="Email"
+                  id="login_email"
+                  name="login"
+                  required
+                  title="Enter correct email"
+                />
+              </label>
+              <label class="form-item invalid">
+                <input
+                  type="password"
+                  class="form-input password-input"
+                  placeholder="Password"
+                  id="login_password"
+                  name="password"
+                  required
+                />
+                <button
+                  class="shownpass hidden view"
+                  id="shownpass"
+                  type="button"
+                ></button>
+              </label>
+              <input type="submit" value="Confirm" class="form-button w100" />
+            </form>
+            <p class="text">
+              If you are not registered,
+              <a class="link" href="sign-up.html">Register</a>
+            </p>
+            <a class="close-sign" href="index.html"
+              ><img src="/assets/images/close.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/assets/js/login-script.js"></script>
+   
+  </body>
+</html>

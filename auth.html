@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>SMS Verified — Authentication</title>
+  </head>
+  <body class="sign h100 center">
+    <section class="auth">
+      <div class="container">
+        <div class="sign-content flex-column">
+          <div class="sign-logo flex-center">
+            <img src="/assets/images/logo.svg" alt="" />
+          </div>
+          <div class="sign-block">
+            <form action="#">
+              <h1 class="title">Enter the authorization code</h1>
+              <p class="text">
+                We have sent you an authorization code to log in. Don't show it
+                to anyone, otherwise you may lose access to your account.
+              </p>
+              <input
+                type="number"
+                class="auth-code"
+                minlength="6"
+                maxlength="6"
+                placeholder="222222"
+                required
+                name="code"
+                title="Please, enter code correctly"
+                pattern="\d{4,4}"
+                min="100000"
+              />
+              <input type="submit" value="Confirm" class="form-button w100" />
+            </form>
+            <a class="close-sign" href="index.html"
+              ><img src="/assets/images/close.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $("body").on("input", ".auth-code", function () {
+        this.value = this.value.replace(/[^0-9]/g, "");
+        if (this.value.length > this.maxLength) {
+          this.value = this.value.slice(0, this.maxLength);
+        }
+      });
+    </script>
+  </body>
+</html>
