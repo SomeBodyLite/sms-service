@@ -6,12 +6,325 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>SMS Verified</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/load.js"></script>
   </head>
   <body>
-    <div class="test" style="font-size: 18px; padding: 20px; display: flex;flex-direction: column; gap: 20px;">
-      <a href="sign-up.html" style=" color: #000;">sign-up</a>
-      <a href="sign-in.html" style=" color: #000;">sign-in</a>
-      <a href="auth.html" style=" color: #000;">auth</a>
+    <header class="header" id="header"></header>
+    <div class="banner">
+      <img class="banner-logo" src="./assets/images/logo.svg" alt="" />
     </div>
+    <main class="main">
+      <div class="container">
+        <div class="main-content">
+          <aside class="sidebar">
+            <div class="sidebar-content">
+              <p>Sidebar. Work in progress...</p>
+            </div>
+          </aside>
+          <section class="content">
+            <article class="article white" id="info">
+              <div class="article-content">
+                <h2 class="title black">Receiving SMS to a virtual number</h2>
+                <p class="paragraph">
+                  You can buy a virtual phone number for registration in social
+                  networks, messengers and other services on our website. Online
+                  private number allows you to create an anonymous account for
+                  personal purposes, promotion in the network or work with
+                  traffic. We offer virtual numbers for registration with
+                  different geography, which allows you to bypass regional
+                  blockings and earn in 180+ countries. A phone number without
+                  SIM can be rented or used for receiving one-time code. If you
+                  are creating a multi-account or just don't want to share your
+                  personal number, use inexpensive SMS-Activate virtual numbers!
+                </p>
+              </div>
+            </article>
+            <article id="grid3">
+              <div class="item item1">
+                <div class="num">1</div>
+                <div class="text">
+                  <h3 class="title black">Get a virtual phone number</h3>
+                  <p class="paragraph">
+                    Select the necessary service, country, operator and click on
+                    the "Buy" button or on the "Arrangement" button and select
+                    the country first, then the service and the operator
+                  </p>
+                </div>
+              </div>
+              <div class="item item2">
+                <div class="num">2</div>
+                <div class="text">
+                  <h3 class="title black">Accept SMS to a virtual number</h3>
+                  <p class="paragraph">
+                    Copy the received phone number and paste it into the
+                    registration form on the service, from which you need to
+                    receive SMS
+                  </p>
+                </div>
+              </div>
+              <div class="item item3">
+                <div class="num">3</div>
+                <div class="text">
+                  <h3 class="title black">
+                    Complete account activation on the service
+                  </h3>
+                  <p class="paragraph">
+                    Use the verification code from the received SMS to activate
+                    the account on the service
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="article blue blue-bg" id="socials">
+              <div class="text">
+                <h1 class="title">
+                  3 for the price of 0, have time to pick up our software!
+                </h1>
+                <a href="#" class="btn demo-accent">Take a look</a>
+              </div>
+              <div class="fire">
+                <img src="./assets/images/fire.png" alt="" />
+              </div>
+              <div class="socials">
+                <a href="#" class="item">
+                  <img src="./assets/images/services/telegram.svg" alt="" />
+                </a>
+                <a href="#" class="item">
+                  <img src="./assets/images/services/whatsapp.svg" alt="" />
+                </a>
+                <a href="#" class="item">
+                  <img
+                    src="./assets/images/services/google-white_bg.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </article>
+            <article id="grid2">
+              <div class="item item1">
+                <img class="item-bg" src="./assets/images/about-1.png" alt="" />
+                <div class="text">
+                  <h2 class="title">Quickly</h2>
+                  <p class="paragraph">
+                    Verification of any service will take you 1 minute, our
+                    services work very fast.
+                  </p>
+                </div>
+              </div>
+              <div class="item item2">
+                <img class="item-bg" src="./assets/images/about-2.png" alt="" />
+                <div class="text">
+                  <h2 class="title">High Quality</h2>
+                  <p class="paragraph">
+                    We are working on the quality of services!
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="article white" id="advantages">
+              <h2 class="title black">Advantages</h2>
+              <ul class="advantages-list">
+                <li class="list-item">
+                  <img
+                    class="list-icon"
+                    src="./assets/images/icons/adv-1.svg"
+                    alt=""
+                  />
+                  <p class="paragraph">
+                    More than 180 countries — we are constantly expanding our
+                    geography
+                  </p>
+                </li>
+                <li class="list-item">
+                  <img
+                    class="list-icon"
+                    src="./assets/images/icons/adv-2.svg"
+                    alt=""
+                  />
+                  <p class="paragraph">
+                    Numbers for 700+ sites and applications, as well as the "Any
+                    other" optionfor other services
+                  </p>
+                </li>
+                <li class="list-item">
+                  <img
+                    class="list-icon"
+                    src="./assets/images/icons/adv-3.svg"
+                    alt=""
+                  />
+                  <p class="paragraph">
+                    Verification of accounts by SMS, number or call from a bot
+                  </p>
+                </li>
+                <li class="list-item">
+                  <img
+                    class="list-icon"
+                    src="./assets/images/icons/adv-4.svg"
+                    alt=""
+                  />
+                  <p class="paragraph">
+                    Discounts and wholesale prices for regular customers
+                  </p>
+                </li>
+              </ul>
+            </article>
+            <article id="faq">
+              <div class="accordion">
+                <div class="accordion-item">
+                  <button id="accordion-button-1" aria-expanded="true">
+                    <div class="accordion-start">
+                      <span class="accordion-title">
+                        How does our service work?
+                      </span>
+                    </div>
+                    <img
+                      class="icon"
+                      src="/assets/images/faqarrow-false.svg"
+                      alt=""
+                    />
+                    <img
+                      class="icon active"
+                      src="/assets/images/faqarrow.svg"
+                      alt=""
+                    />
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                      The SMS-Activate service makes it possible to receive an
+                      SMS or pass verification by calling a number that is in no
+                      way connected with you, your location or passport data. No
+                      need to buy a SIM card - use a one-time number and get a
+                      confirmation code on the SMS-Activate website.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button id="accordion-button-1" aria-expanded="false">
+                    <div class="accordion-start">
+                      <span class="accordion-title">
+                        How does our service work?
+                      </span>
+                    </div>
+                    <img
+                      class="icon"
+                      src="/assets/images/faqarrow-false.svg"
+                      alt=""
+                    />
+                    <img
+                      class="icon active"
+                      src="/assets/images/faqarrow.svg"
+                      alt=""
+                    />
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                      The SMS-Activate service makes it possible to receive an
+                      SMS or pass verification by calling a number that is in no
+                      way connected with you, your location or passport data. No
+                      need to buy a SIM card - use a one-time number and get a
+                      confirmation code on the SMS-Activate website.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button id="accordion-button-1" aria-expanded="false">
+                    <div class="accordion-start">
+                      <span class="accordion-title">
+                        How does our service work?
+                      </span>
+                    </div>
+                    <img
+                      class="icon"
+                      src="/assets/images/faqarrow-false.svg"
+                      alt=""
+                    />
+                    <img
+                      class="icon active"
+                      src="/assets/images/faqarrow.svg"
+                      alt=""
+                    />
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                      The SMS-Activate service makes it possible to receive an
+                      SMS or pass verification by calling a number that is in no
+                      way connected with you, your location or passport data. No
+                      need to buy a SIM card - use a one-time number and get a
+                      confirmation code on the SMS-Activate website.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button id="accordion-button-1" aria-expanded="false">
+                    <div class="accordion-start">
+                      <span class="accordion-title">
+                        How does our service work?
+                      </span>
+                    </div>
+                    <img
+                      class="icon"
+                      src="/assets/images/faqarrow-false.svg"
+                      alt=""
+                    />
+                    <img
+                      class="icon active"
+                      src="/assets/images/faqarrow.svg"
+                      alt=""
+                    />
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                      The SMS-Activate service makes it possible to receive an
+                      SMS or pass verification by calling a number that is in no
+                      way connected with you, your location or passport data. No
+                      need to buy a SIM card - use a one-time number and get a
+                      confirmation code on the SMS-Activate website.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button id="accordion-button-1" aria-expanded="false">
+                    <div class="accordion-start">
+                      <span class="accordion-title">
+                        How does our service work?
+                      </span>
+                    </div>
+                    <img
+                      class="icon"
+                      src="/assets/images/faqarrow-false.svg"
+                      alt=""
+                    />
+                    <img
+                      class="icon active"
+                      src="/assets/images/faqarrow.svg"
+                      alt=""
+                    />
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                      The SMS-Activate service makes it possible to receive an
+                      SMS or pass verification by calling a number that is in no
+                      way connected with you, your location or passport data. No
+                      need to buy a SIM card - use a one-time number and get a
+                      confirmation code on the SMS-Activate website.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" id="footer"></footer>
+
+    <script src="./assets/js/accordion.js"></script>
   </body>
 </html>

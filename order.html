@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>SMS Verified</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/load.js"></script>
+  </head>
+  <body>
+    <header class="header" id="header">
+    </header>
+    <div class="banner">
+      <img class="banner-logo" src="./assets/images/logo.svg" alt="" />
+    </div>
+    <main class="main">
+      <div class="container">
+        <div class="main-content">
+          <aside class="sidebar">
+            <div class="sidebar-content">
+              <p>Sidebar. Work in progress...</p>
+            </div>
+          </aside>
+          <section class="content" id="order">
+            <article class="article order">
+              <div class="order-block">
+                <span class="order-title">Order №1241241224214</span>
+                <div class="tile">
+                  <span class="first">Date</span>
+                  <span class="second">29 Nov 23 y. 09:15</span>
+                </div>
+                <div class="tile">
+                  <span class="first">Service</span>
+                  <span class="second">
+                    <img src="./assets/images/services/google.svg" alt="" />
+                    Google
+                  </span>
+                </div>
+                <div class="tile">
+                  <span class="first">Country</span>
+                  <span class="second">
+                    <img src="./assets/images/countries/GB.svg" alt="" />
+                    England
+                  </span>
+                </div>
+                <div class="tile">
+                  <span class="first">Operator</span>
+                  <span class="second"> Virtual35</span>
+                </div>
+                <div class="tile">
+                  <span class="first">Price</span>
+                  <span class="second">20$</span>
+                </div>
+                <div class="tile">
+                  <span class="first">
+                    Number:
+                    <input
+                      id="number"
+                      class="clear number-input"
+                      type="text"
+                      value="+1535252624624624"
+                      readonly
+                      placeholder="Loading..."
+                    />
+                  </span>
+                  <span class="second">
+                    <button
+                      class="clear clipboard"
+                      data-clipboard-target="#number"
+                    >
+                      <img
+                        class="clipboard-img"
+                        src="./assets/images/clipboard.svg"
+                        alt=""
+                      />
+                    </button>
+                  </span>
+                </div>
+                <div class="tile blue">
+                  <span class="first">
+                    <img src="./assets/images/icons/error.svg" alt="" />
+                  </span>
+                  <span class="second"
+                    >It is possible to receive only 1 SMS to the number of the
+                    given operator</span
+                  >
+                </div>
+                <span class="code-title">Code from SMS</span>
+                <!-- class="tile code-form completed" Добавляется класс completed когда пришло смс -->
+                <div class="tile code-form">
+                  <div class="first">
+                    <input
+                      type="text"
+                      class="form-input recieved"
+                      id="smscode"
+                      readonly
+                      placeholder="Waiting..."
+                      value=""
+                    />
+                  </div>
+                  <button
+                    class="clear clipboard"
+                    data-clipboard-target="#smscode"
+                  >
+                    <img
+                      class="clipboard-img"
+                      src="./assets/images/clipboard.svg"
+                      alt=""
+                    />
+                  </button>
+                </div>
+                <div class="code-status">
+                  <span>Status</span>
+                  <span class="time">10 minutes left</span>
+                  <span class="status">
+                    <img
+                      src="./assets/images/icons/status-received.svg"
+                      alt=""
+                    />
+                    <p>Received</p>
+                  </span>
+                  <!-- <span class="status">
+                    <img src="./assets/images/icons/status-completed.svg" alt="">
+                    <p>Completed</p>
+                  </span>
+                  <span class="status">
+                    <img src="./assets/images/icons/status-refused.svg" alt="">
+                    <p>Refused</p>
+                  </span> -->
+                </div>
+                <div class="progress">
+                  <!-- Если width: 100%, то выдать класс "done" -->
+                  <div class="progress-success" style="width: 50%"></div>
+                </div>
+                <div class="buttons">
+                  <button class="btn">Ban</button>
+                  <button class="btn accent">Cancel</button>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" id="footer">
+    </footer>
+    <script src="./assets/js/clipboard.min.js"></script>
+    <script src="./assets/js/clipboard-tooltip.js"></script>
+    <script>
+      var clipboard = new ClipboardJS(".clipboard");
+
+      clipboard.on("success", function (e) {
+        showTooltip(e.trigger, "Copied!");
+      });
+    </script>
+  </body>
+</html>

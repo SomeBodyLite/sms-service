@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>SMS Verified</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/load.js"></script>
+  </head>
+  <body class="account h100">
+    <header class="header" id="header"></header>
+    <main class="main">
+      <div class="container">
+        <div class="account-content">
+          <aside class="profile">
+            <div class="profile-info">
+              <div class="profile-logo flex-center">
+                <img src="./assets/images/profile-placeholder.jpg" alt="" />
+                <!-- <img src="./assets/images/avatar.png" alt="Avatar" /> -->
+              </div>
+              <div class="profile-name">Your Name</div>
+              <div class="profile-mail">fefwbgr@protonmail.com</div>
+              <span class="badge">Member since: Dec 2020</span>
+            </div>
+            <div class="profile-stats">
+              <ul class="stats-list">
+                <li class="list-item">
+                  <img
+                    src="./assets/images/icons/profile-verifications.svg"
+                    alt=""
+                  />
+                  <p>Verifications: <span>0</span></p>
+                </li>
+                <li class="list-item">
+                  <img
+                    src="./assets/images/icons/profile-deposits.svg"
+                    alt=""
+                  />
+                  <p>Deposits: <span>$0.00</span></p>
+                </li>
+                <li class="list-item">
+                  <img src="./assets/images/icons/profile-balance.svg" alt="" />
+                  <p>Balance: <span>$0.00</span></p>
+                </li>
+                <li class="list-item">
+                  <img
+                    src="./assets/images/icons/profile-referrals.svg"
+                    alt=""
+                  />
+                  <p>Referrals: <span>0</span></p>
+                </li>
+              </ul>
+            </div>
+            <div class="profile-button">
+              <button class="btn accent">Sign Out</button>
+            </div>
+          </aside>
+          <section class="account-section">
+            <div class="tabs">
+              <div class="tabs__header">
+                <div class="tabs__header-item active">Setting</div>
+                <div class="tabs__header-item">Refferals</div>
+                <div class="tabs__header-item">Verifications</div>
+              </div>
+              <div class="tabs__content">
+                <div class="tabs__content-item settings">
+                  <div class="profile-block">
+                    <div class="title">Personal information</div>
+                    <div class="content">
+                      <div class="form-group">
+                        <label for="editUsername">Username</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="editUsername"
+                          placeholder="Your Name"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="editEmail">Email</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="editEmail"
+                          aria-describedby="emailHelp"
+                          placeholder="example@email.com"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="editPassword">Email</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="editPassword"
+                          placeholder="******"
+                        />
+                      </div>
+                      <div class="profile-button" style="margin-top: 25px">
+                        <button class="btn accent">Update</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-block d-none">
+                    <div class="title">General</div>
+                    <div class="content"></div>
+                  </div>
+                  <div></div>
+                </div>
+                <div class="tabs__content-item refferals">
+                  <div class="profile-block information">
+                    <div class="title">Information</div>
+                    <div class="content small">
+                      <div class="form-group">
+                        <label for="referralCode"
+                          >Make sure the people that you refer uses your
+                          personal link to sign up:</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="referralCode"
+                          placeholder="Your Refferals code"
+                          value="134ffrggtg43436b"
+                          readonly
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-block statistics">
+                    <div class="title">
+                      <span>Statistics</span>
+                      <!-- Переключатель "страниц". Всё что нужно для смены цвета - выдавать/забирать класс active у кнопки -->
+                      <div class="switchpage-container">
+                        <button class="left"></button>
+                        <button class="right active"></button>
+                      </div>
+                    </div>
+                    <div class="content small">
+                      <div class="statistics-headline">
+                        <span>Username</span>
+                        <span>Total Profit</span>
+                        <span>Date</span>
+                      </div>
+                      <div class="statistics-line">
+                        <span>Camil</span>
+                        <span>100$</span>
+                        <span>24.12.2024</span>
+                      </div>
+                      <div class="statistics-line">
+                        <span>Camil</span>
+                        <span>100$</span>
+                        <span>24.12.2024</span>
+                      </div>
+                      <div class="statistics-line">
+                        <span>Alfer</span>
+                        <span>100$</span>
+                        <span>24.12.2024</span>
+                      </div>
+                      <div class="statistics-line">
+                        <span>Alfer</span>
+                        <span>100$</span>
+                        <span>24.12.2024</span>
+                      </div>
+                      <div class="statistics-line">
+                        <span>Nilson</span>
+                        <span>100$</span>
+                        <span>24.12.2024</span>
+                      </div>
+                      <div class="statistics-line">
+                        <span>Nilson</span>
+                        <span>100$</span>
+                        <span>24.12.2024</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-block ref-statistics">
+                    <div class="title" style="border-bottom: none">
+                      Referral statistics
+                    </div>
+                    <div class="content small">
+                      <div class="ref-block profit">
+                        <div class="title">Your balance from referrals</div>
+                        <div class="ref-block_info">
+                          <img
+                            src="./assets/images/icons/profile-balance.svg"
+                            alt=""
+                          />
+                          <span>12.000$</span>
+                        </div>
+                      </div>
+                      <div class="ref-block ref-count">
+                        <div class="title">Number of referrals</div>
+                        <div class="ref-block_info">
+                          <img
+                            src="./assets/images/icons/profile-referrals.svg"
+                            alt=""
+                          />
+                          <span>12 human</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__content-item verifications">
+                  <div class="profile-block">
+                    <div class="title" style="border-bottom: none">
+                      Verifications
+                    </div>
+                  </div>
+                  <div class="profile-block">
+                    <div class="title">
+                      <span>Statistics</span>
+                      <div class="search-input_container">
+                        <label class="search-input_label">
+                          <img
+                            class="search-input_icon"
+                            src="./assets/images/icons/search.svg"
+                            alt=""
+                          />
+                          <input
+                            type="text"
+                            class="search-input"
+                            placeholder="Search"
+                          />
+                        </label>
+                      </div>
+                      <!-- Переключатель "страниц". Всё что нужно для смены цвета - выдавать/забирать класс active у кнопки -->
+                      <div class="switchpage-container">
+                        <button class="left"></button>
+                        <button class="right active"></button>
+                      </div>
+                    </div>
+                    <div class="content small">
+                      <div class="activities-history_head">
+                        <span>Country</span>
+                        <span>Service</span>
+                        <span>Number</span>
+                        <span>Show</span>
+                        <span>Price</span>
+                        <span>Date</span>
+                        <span>Action</span>
+                      </div>
+                      <div class="activities-history">
+                        <span>USA</span>
+                        <span>Signal</span>
+                        <span>+14214214214</span>
+                         <a href="order.html" class="btn accent">Show</a>
+                        <span>$2</span>
+                        <span>10/03/2023</span>
+                        <button disabled class="btn accent">Re-USE</button>
+                      </div>
+                      <div class="activities-history">
+                        <span>USA</span>
+                        <span>Signal</span>
+                        <span>+14214214214</span>
+                         <a href="order.html" class="btn accent">Show</a>
+                        <span>$2</span>
+                        <span>10/03/2023</span>
+                        <button class="btn accent">Re-USE</button>
+                      </div>
+                      <div class="activities-history">
+                        <span>USA</span>
+                        <span>Signal</span>
+                        <span>+14214214214</span>
+                         <a href="order.html" class="btn accent">Show</a>
+                        <span>$2</span>
+                        <span>10/03/2023</span>
+                        <button class="btn accent">Re-USE</button>
+                      </div>
+                      <div class="activities-history">
+                        <span>USA</span>
+                        <span>Signal</span>
+                        <span>+14214214214</span>
+                         <a href="order.html" class="btn accent">Show</a>
+                        <span>$2</span>
+                        <span>10/03/2023</span>
+                        <button class="btn accent">Re-USE</button>
+                      </div>
+                      <div class="activities-history">
+                        <span>USA</span>
+                        <span>Signal</span>
+                        <span>+14214214214</span>
+                        <a href="order.html" class="btn accent">Show</a>
+                        <span>$2</span>
+                        <span>10/03/2023</span>
+                        <button class="btn accent">Re-USE</button>
+                      </div>
+                      <div class="activities-history">
+                        <span>USA</span>
+                        <span>Signal</span>
+                        <span>+14214214214</span>
+                         <a href="order.html" class="btn accent">Show</a>
+                        <span>$2</span>
+                        <span>10/03/2023</span>
+                        <button class="btn accent">Re-USE</button>
+                      </div>
+                      <div class="activities-history">
+                        <span>USA</span>
+                        <span>Signal</span>
+                        <span>+14214214214</span>
+                         <a href="order.html" class="btn accent">Show</a>
+                        <span>$2</span>
+                        <span>10/03/2023</span>
+                        <button class="btn accent">Re-USE</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer" id="footer"></footer>
+    <script src="./assets/js/tabs.js"></script>
+    <script>
+      tabs(
+        ".tabs__header",
+        ".tabs__header-item",
+        ".tabs__content-item",
+        "active"
+      );
+    </script>
+  </body>
+</html>
