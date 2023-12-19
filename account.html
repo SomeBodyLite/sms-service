@@ -122,14 +122,26 @@
                           >Make sure the people that you refer uses your
                           personal link to sign up:</label
                         >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="referralCode"
-                          placeholder="Your Refferals code"
-                          value="134ffrggtg43436b"
-                          readonly
-                        />
+                        <div>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="referralCode"
+                            placeholder="Your Refferals code"
+                            value="134ffrggtg43436b"
+                            readonly
+                          />
+                          <button
+                            class="clear clipboard"
+                            data-clipboard-target="#referralCode"
+                          >
+                            <img
+                              class="clipboard-img"
+                              src="./assets/images/clipboard.svg"
+                              alt=""
+                            />
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -251,7 +263,7 @@
                         <span>USA</span>
                         <span>Signal</span>
                         <span>+14214214214</span>
-                         <a href="order.html" class="btn accent">Show</a>
+                        <a href="order.html" class="btn accent">Show</a>
                         <span>$2</span>
                         <span>10/03/2023</span>
                         <button disabled class="btn accent">Re-USE</button>
@@ -260,25 +272,7 @@
                         <span>USA</span>
                         <span>Signal</span>
                         <span>+14214214214</span>
-                         <a href="order.html" class="btn accent">Show</a>
-                        <span>$2</span>
-                        <span>10/03/2023</span>
-                        <button class="btn accent">Re-USE</button>
-                      </div>
-                      <div class="activities-history">
-                        <span>USA</span>
-                        <span>Signal</span>
-                        <span>+14214214214</span>
-                         <a href="order.html" class="btn accent">Show</a>
-                        <span>$2</span>
-                        <span>10/03/2023</span>
-                        <button class="btn accent">Re-USE</button>
-                      </div>
-                      <div class="activities-history">
-                        <span>USA</span>
-                        <span>Signal</span>
-                        <span>+14214214214</span>
-                         <a href="order.html" class="btn accent">Show</a>
+                        <a href="order.html" class="btn accent">Show</a>
                         <span>$2</span>
                         <span>10/03/2023</span>
                         <button class="btn accent">Re-USE</button>
@@ -296,7 +290,7 @@
                         <span>USA</span>
                         <span>Signal</span>
                         <span>+14214214214</span>
-                         <a href="order.html" class="btn accent">Show</a>
+                        <a href="order.html" class="btn accent">Show</a>
                         <span>$2</span>
                         <span>10/03/2023</span>
                         <button class="btn accent">Re-USE</button>
@@ -305,7 +299,25 @@
                         <span>USA</span>
                         <span>Signal</span>
                         <span>+14214214214</span>
-                         <a href="order.html" class="btn accent">Show</a>
+                        <a href="order.html" class="btn accent">Show</a>
+                        <span>$2</span>
+                        <span>10/03/2023</span>
+                        <button class="btn accent">Re-USE</button>
+                      </div>
+                      <div class="activities-history">
+                        <span>USA</span>
+                        <span>Signal</span>
+                        <span>+14214214214</span>
+                        <a href="order.html" class="btn accent">Show</a>
+                        <span>$2</span>
+                        <span>10/03/2023</span>
+                        <button class="btn accent">Re-USE</button>
+                      </div>
+                      <div class="activities-history">
+                        <span>USA</span>
+                        <span>Signal</span>
+                        <span>+14214214214</span>
+                        <a href="order.html" class="btn accent">Show</a>
                         <span>$2</span>
                         <span>10/03/2023</span>
                         <button class="btn accent">Re-USE</button>
@@ -328,6 +340,15 @@
         ".tabs__content-item",
         "active"
       );
+    </script>
+    <script src="./assets/js/clipboard.min.js"></script>
+    <script src="./assets/js/clipboard-tooltip.js"></script>
+    <script>
+      var clipboard = new ClipboardJS(".clipboard");
+
+      clipboard.on("success", function (e) {
+        showTooltip(e.trigger, "Copied!");
+      });
     </script>
   </body>
 </html>
