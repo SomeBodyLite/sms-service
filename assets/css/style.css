@@ -422,7 +422,7 @@ header.header {
 .header-buttons.logged-in {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 15px;
 }
 
 a.btn {
@@ -1528,4 +1528,130 @@ aside.profile {
 
 .dropdown:hover .dropdown-content {
   display: flex;
+}
+
+.user-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dropdown-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 100px;
+}
+
+.dropdown-avatar_arrow {
+  width: 14px;
+  height: 10px;
+}
+
+.user-wrapper.dropdown .dropdown-content {
+  left: unset;
+  right: 0;
+  min-width: 147px;
+  padding: 0;
+  background: #171A2F;
+  box-shadow: -6px 9px 17px 0px rgba(0, 0, 0, 0.14);
+  position: unset;
+}
+
+.user-wrapper.dropdown .dropdown-content a {
+  color: var(--white, #FFF);
+  text-align: right;
+  font-family: Lab Grotesque;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: end;
+}
+
+.user-wrapper.dropdown .dropdown-content a:not(:last-child) {
+  border-bottom: 1px solid #333863;
+}
+
+.dropdown-container {
+  padding-top: 17px;
+  left: unset;
+  right: 0;
+  position: absolute;
+  top: 100%;
+}
+
+.pink-color {
+  color: #FF7ECC !important;
+}
+
+.payment-content {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.payment-block {
+  border-radius: 12px;
+  border: 1px solid #DDE6EF;
+  background: var(--white, #FFF);
+}
+
+.payment-block .title {
+  color: #171A2F;
+  text-align: center;
+  font-family: Lab Grotesque;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 120%;
+  padding: 23px 0;
+}
+
+.payment-methods {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 28px;
+}
+
+.payment-methods .payment-block {
+  padding: 20px 25px
+}
+
+form.deposit {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 45px;
+  gap: 35px;
+}
+
+.deposit-input {
+  border-radius: 12px;
+  border: 1px solid var(--Line, #DDE6EF);
+  background: var(--Background, #F3F5F9);
+  padding: 14px 16px;
+  color: #222;
+  font-family: Lab Grotesque;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 100%;
+}
+
+.deposit-input::placeholder {
+  color: #67748E;
+}
+
+.deposit-button {
+  color: var(--white, #FFF);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
+  padding: 12px;
+  min-width: 350px;
 }

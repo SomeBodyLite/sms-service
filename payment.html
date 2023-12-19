@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>SMS Verified</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/load.js"></script>
+  </head>
+  <body>
+    <header class="header" id="header"></header>
+    <main class="main">
+      <div class="container">
+        <div class="payment-content">
+          <div class="payment-block">
+            <div class="title">Top up balance</div>
+          </div>
+          <div class="payment-methods">
+            <div class="payment-block"></div>
+            <div class="payment-block"></div>
+          </div>
+          <form class="payment-block deposit">
+            <input
+              type="number"
+              class="deposit-input"
+              placeholder="Enter the deposit amount $00.00"
+              required
+              name="value"
+            />
+            <input type="submit" class="btn accent deposit-button" value="Replenish">
+          </form>
+          <div class="payment-block">
+            <div class="title">Transaction history</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer" id="footer"></footer>
+  </body>
+</html>
