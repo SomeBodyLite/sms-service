@@ -89,7 +89,9 @@ body.sign {
   background-size: cover;
   background-position: center;
 }
-
+body.error{
+  background-image: url(../images/error-bg.png);
+}
 button,
 input {
   font-family: inherit;
