@@ -89,9 +89,11 @@ body.sign {
   background-size: cover;
   background-position: center;
 }
-body.error{
+
+body.error {
   background-image: url(../images/error-bg.png);
 }
+
 button,
 input {
   font-family: inherit;
@@ -983,6 +985,7 @@ button.clear {
   display: flex;
   align-items: center;
   gap: 25px;
+  justify-content: space-between;
 }
 
 .code-status span {
@@ -1493,6 +1496,13 @@ aside.profile {
   color: #5C607C;
 }
 
+.activities-history span {
+  max-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .activities-history .btn {
   color: var(--white, #FFF);
   text-align: center;
@@ -1979,7 +1989,7 @@ form:has(.content) {
   border: 3px solid #fff;
 }
 
-.radio-item.fav .star {
+.radio-item .star.active {
   filter: invert(66%) sepia(95%) saturate(5013%) hue-rotate(218deg) brightness(99%) contrast(107%);
 }
 

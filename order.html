@@ -15,16 +15,14 @@
     <script src="./assets/js/load.js"></script>
   </head>
   <body>
-    <header class="header" id="header">
-    </header>
+    <header class="header" id="header"></header>
     <div class="banner">
       <img class="banner-logo" src="./assets/images/logo.svg" alt="" />
     </div>
     <main class="main">
       <div class="container">
         <div class="main-content">
-          <aside class="sidebar" id="sidebar">
-          </aside>
+          <aside class="sidebar" id="sidebar"></aside>
           <section class="content" id="order">
             <article class="article order">
               <div class="order-block">
@@ -114,23 +112,27 @@
                   </button>
                 </div>
                 <div class="code-status">
-                  <span>Status</span>
-                  <span class="time">10 minutes left</span>
-                  <span class="status">
-                    <img
-                      src="./assets/images/icons/status-received.svg"
-                      alt=""
-                    />
-                    <p>Received</p>
-                  </span>
-                  <!-- <span class="status">
-                    <img src="./assets/images/icons/status-completed.svg" alt="">
-                    <p>Completed</p>
-                  </span>
-                  <span class="status">
-                    <img src="./assets/images/icons/status-refused.svg" alt="">
-                    <p>Refused</p>
-                  </span> -->
+                  <div style="display: flex;
+                  align-items: center;
+                  gap: 10px;">
+                    <span>Status</span>
+                    <!-- <span class="status">
+                      <img src="./assets/images/icons/status-completed.svg" alt="">
+                      <p>Completed</p>
+                    </span>
+                    <span class="status">
+                      <img src="./assets/images/icons/status-refused.svg" alt="">
+                      <p>Refused</p>
+                    </span> -->
+                    <span class="status">
+                      <img
+                        src="./assets/images/icons/status-received.svg"
+                        alt=""
+                      />
+                      <p>Received</p>
+                    </span>
+                  </div>
+                  <span class="time">Loading...</span>
                 </div>
                 <div class="progress">
                   <!-- Если width: 100%, то выдать класс "done" -->
@@ -147,10 +149,11 @@
       </div>
     </main>
 
-    <footer class="footer" id="footer">
-    </footer>
+    <footer class="footer" id="footer"></footer>
     <script src="./assets/js/clipboard.min.js"></script>
     <script src="./assets/js/clipboard-tooltip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/timer.js"></script>
     <script>
       var clipboard = new ClipboardJS(".clipboard");
 
