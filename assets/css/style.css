@@ -73,7 +73,7 @@ body {
 }
 
 body.h100 {
-  height: 100dvh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -405,12 +405,17 @@ header.header {
   border: 1px solid var(--accent-color);
 }
 
-.btn.accent:disabled,
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* .btn.accent:disabled,
 .btn.accent.disabled {
   background: #88ADF6;
   border: 1px solid #88ADF6;
   cursor: not-allowed;
-}
+} */
 
 .header-buttons .btn.black {
   padding: 8px 10px;
