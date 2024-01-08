@@ -1019,9 +1019,11 @@ button.clear {
 
 .progress-success {
   position: absolute;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px;
+  /* border-radius: 10px 0 0 10px; */
   background: var(--accent-color);
   height: 100%;
+  transition: width 1s ease-in-out;
 }
 
 .progress-success.done {
