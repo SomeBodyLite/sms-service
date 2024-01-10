@@ -2172,6 +2172,9 @@ form:has(.content) {
   article#grid3 {
     gap: 10px;
   }
+  .account-content {
+    display: grid;
+    grid-template-columns: 270px 1fr;}
 }
 
 @media (max-width: 720px) {
