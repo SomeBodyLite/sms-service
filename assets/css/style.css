@@ -2272,7 +2272,7 @@ form:has(.content) {
   .tabs__content-item.refferals {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
     grid-auto-flow: row;
     grid-template-areas:
       "information"
@@ -2301,7 +2301,26 @@ form:has(.content) {
   .activities-history_head span {
     min-width: 90px;
   }
+
   .activities-history_head span:nth-child(4) {
     min-width: 50px;
+  }
+
+  .payment-methods {
+    grid-auto-flow: row;
+  }
+
+  form.deposit {
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px 30px;
+  }
+
+  .deposit-button {
+    min-width: unset;
+  }
+  .history-list{
+    overflow-x: auto;
+  max-width: 100%;
   }
 }
