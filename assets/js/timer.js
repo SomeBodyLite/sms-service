@@ -3,7 +3,7 @@
 var intervalId;
 
 function setCountdown(targetDate) {
-  var endDate = new Date(targetDate).getTime();
+  var endDate = new Date(targetDate + 'Z').getTime();
   var maxDuration = 10 * 60 * 1000; // Максимальная длительность таймера в миллисекундах (10 минут)
 
   intervalId = setInterval(function () {
@@ -40,7 +40,7 @@ function stopCountdown() {
   $(".progress-success").css("width", "0%");
 }
 
-setCountdown("2024-01-08 20:55:00");
+setCountdown("2024-01-10 10:45:00");
 
 // Таймер на UTC + 0 время.
 // function setCountdown(targetDate) {
