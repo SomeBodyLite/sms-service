@@ -2316,6 +2316,12 @@ form:has(.content) {
   gap: 12px;
 }
 
+.contact-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .empty {
   display: flex;
   align-items: center;
