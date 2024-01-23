@@ -40,11 +40,16 @@
           <input
             type="text"
             class="search-input"
-            placeholder="Search by category"
+            placeholder="Search for service"
           />
         </label>
       </div>
       <div class="select-container">
+        <!-- Можно скрывать/отображать через класс d-none -->
+        <div class="empty">
+          <img src="./assets/images/icons/not-found.svg" alt="">
+          <span>Service not found</span>
+        </div>
         <!-- Класс fav окрашивает звездочку -->
         <div class="radio-item fav">
           <input
@@ -178,11 +183,15 @@
           <input
             type="text"
             class="search-input"
-            placeholder="Search country "
+            placeholder="Search for country "
           />
         </label>
       </div>
       <div class="select-container">
+        <div class="empty">
+          <img src="./assets/images/icons/not-found.svg" alt="">
+          <span>Country not found</span>
+        </div>
         <!-- Класс fav окрашивает звездочку -->
         <div class="radio-item fav">
           <input
@@ -313,7 +322,7 @@
                   src="./assets/images/icons/number-type.svg"
                   alt=""
                 />
-                Virtual11
+                <span class="name">Virtual111</span>
               </div>
               <div class="operator-percent">
                 <img
@@ -352,7 +361,7 @@
                   src="./assets/images/icons/number-type.svg"
                   alt=""
                 />
-                Virtual22
+                <span class="name">Virtual22</span>
               </div>
               <div class="operator-percent">
                 <img
@@ -391,7 +400,7 @@
                   src="./assets/images/icons/number-type.svg"
                   alt=""
                 />
-                Virtual33
+                <span class="name">Virtual33</span>
               </div>
               <div class="operator-percent">
                 <img

@@ -3,26 +3,85 @@
     <a class="header-logo" href="/">
       <img src="./assets/images/logo.svg" alt="" />
     </a>
+
     <div class="header-info">
       <div class="header-buttons not-login d-none">
-        <a href="" class="btn black">
-          <img src="./assets/images/services/telegram_gradient.svg" alt="" />
-          Telegram
-        </a>
-        <a href="#" class="btn black">
+        <div class="contact-wrapper dropdown">
+          <div class="contact-button"><img src="./assets/images/icons/mail.svg" alt="" /> Contact</div>
+          <div class="dropdown-container">
+            <div class="dropdown-content">
+              <a href="#" target="_blank"
+                ><img
+                  src="./assets/images/services/telegram_nobg.svg"
+                  alt=""
+                />Telegram Channel</a
+              >
+              <a href="#" target="_blank"
+                ><img
+                  src="./assets/images/services/telegram_nobg.svg"
+                  alt=""
+                />Telegram Support</a
+              >
+              <a href="#" target="_blank"
+                ><img src="./assets/images/icons/mail.svg" alt="" />Email</a
+              >
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn light login">
           <img src="./assets/images/login.svg" alt="" />
-          Register
+          Login
         </a>
       </div>
       <div class="header-buttons logged-in">
+        <div class="contact-wrapper dropdown">
+          <div class="contact-button"><img src="./assets/images/icons/mail.svg" alt="" />
+            Contact</div>
+          <div class="dropdown-container">
+            <div class="dropdown-content">
+              <a href="#"
+                ><img
+                  src="./assets/images/services/telegram_nobg.svg"
+                  alt=""
+                />Telegram Channel</a
+              >
+              <a href="#"
+                ><img
+                  src="./assets/images/services/telegram_nobg.svg"
+                  alt=""
+                />Telegram Support</a
+              >
+              <a href="#"
+                ><img src="./assets/images/icons/mail.svg" alt="" />Email</a
+              >
+            </div>
+          </div>
+        </div>
         <div class="language-wrapper dropdown">
           <img src="./assets/images/icons/language_switch.svg" alt="" />
           <span class="current-language">English</span>
-          <img src="./assets/images/icons/dropdown-icon.svg" alt="" />
-          <div class="dropdown-content">
-            <a href="#">English</a>
-            <a href="#">English</a>
-            <a href="#">English</a>
+          <img
+            class="language-dropdown"
+            src="./assets/images/icons/dropdown-icon_black.svg"
+            alt=""
+          />
+          <div class="dropdown-container">
+            <div class="dropdown-content">
+              <a href="#" class="language-item"
+                ><img src="./assets/images/countries/US.svg" alt="" />
+                <span>English</span></a
+              >
+              <a href="#" class="language-item"
+                ><img src="./assets/images/countries/RU.svg" alt="" /><span
+                  >Russian</span
+                ></a
+              >
+              <a href="#" class="language-item"
+                ><img src="./assets/images/countries/IN.svg" alt="" /><span
+                  >Indian</span
+                ></a
+              >
+            </div>
           </div>
         </div>
 
@@ -32,7 +91,7 @@
             src="./assets/images/icons/plus-icon.svg"
             alt=""
           />
-          <span class="balance">1245.81$</span>
+          <span class="balance">$1245.81</span>
         </a>
         <div class="user-wrapper dropdown">
           <a href="account.html">
@@ -49,9 +108,11 @@
           />
           <div class="dropdown-container">
             <div class="dropdown-content">
-              <a href="/account.html">Personal account</a>
+              <a href="/account.html">Personal Account</a>
+              <a href="#">Dashboard</a>
               <a class="pink-color" href="#"
-                ><img src="./assets/images/icons/sign-out.svg" alt="" /> Exit</a
+                ><img src="./assets/images/icons/sign-out.svg" alt="" />
+                Logout</a
               >
             </div>
           </div>
@@ -59,4 +120,21 @@
       </div>
     </div>
   </div>
+  <a class="header-logo mobile-logo" href="/">
+    <img src="./assets/images/logo.svg" alt="" />
+  </a>
+  <div class="burger">
+    <img src="./assets/images/icons/burger.svg" alt="" />
+  </div>
 </div>
+<script>
+  $(".burger").click(function () {
+    $(this).toggleClass("active");
+    $(".header-content").toggleClass("open");
+    if ($(".header-content").hasClass("open")) {
+      $("body").css("overflow", "hidden");
+    } else {
+      $("body").css("overflow", "");
+    }
+  });
+</script>
