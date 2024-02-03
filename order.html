@@ -16,6 +16,9 @@
   </head>
   <body>
     <header class="header" id="header"></header>
+    <div class="banner mobile">
+      <img class="banner-logo" src="./assets/images/logo.svg" alt="" />
+    </div>
     <main class="main">
       <div class="container">
         <div class="main-content">
@@ -26,7 +29,7 @@
             </div>
             <article class="article order">
               <div class="order-block">
-                <span class="order-title">Order №1241241224214</span>
+                <span class="order-title">Order #1123</span>
                 <div class="tile">
                   <span class="first">Date</span>
                   <span class="second">29 Nov 23 y. 09:15</span>
@@ -60,7 +63,7 @@
                       id="number"
                       class="clear number-input"
                       type="text"
-                      value="+1535252624624624"
+                      value="+1 3623872323"
                       readonly
                       placeholder="Loading..."
                     />
@@ -68,7 +71,8 @@
                   <span class="second">
                     <button
                       class="clear clipboard"
-                      data-clipboard-target="#number"
+                      data-clipboard-text="+13623872323"
+                      title="Click to Copy"
                     >
                       <img
                         class="clipboard-img"
@@ -87,10 +91,10 @@
                     given operator</span
                   >
                 </div>
-                <span class="code-title">Code from SMS</span>
                 <!-- class="tile code-form completed" Добавляется класс completed когда пришло смс -->
                 <div class="tile code-form">
                   <div class="first">
+                    <span style="white-space: nowrap">Code from SMS:</span>
                     <input
                       type="text"
                       class="form-input recieved"
@@ -103,6 +107,7 @@
                   <button
                     class="clear clipboard"
                     data-clipboard-target="#smscode"
+                    title="Click to Copy"
                   >
                     <img
                       class="clipboard-img"
@@ -112,9 +117,7 @@
                   </button>
                 </div>
                 <div class="code-status">
-                  <div style="display: flex;
-                  align-items: center;
-                  gap: 10px;">
+                  <div style="display: flex; align-items: center; gap: 10px">
                     <span>Status</span>
                     <!-- <span class="status">
                       <img src="./assets/images/icons/status-completed.svg" alt="">

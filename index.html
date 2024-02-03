@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -12,7 +13,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>SMS Verified</title>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -37,7 +38,10 @@
             </div>
             <article class="article white" id="info">
               <div class="article-content">
-                <h2 class="title black">Receiving SMS to <br> a virtual number</h2>
+                <h2 class="title black">
+                  Receiving SMS to <br />
+                  a virtual number
+                </h2>
                 <p class="paragraph">
                   You can buy a virtual phone number for registration in social
                   networks, messengers and other services on our website. Online
@@ -51,8 +55,60 @@
                   personal number, use inexpensive SMS-Activate virtual numbers!
                 </p>
               </div>
-              <img class="info-image" src="./assets/images/phone.png" alt="">
+              <img class="info-image" src="./assets/images/phone.png" alt="" />
             </article>
+            <article>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <article class="article blue blue-bg" id="socials">
+                      <div class="text">
+                        <h1 class="title">
+                          3 for the price of 0, have time to pick up our
+                          software!
+                        </h1>
+                        <a href="#" class="btn demo-accent">Take a look</a>
+                      </div>
+                      <div class="fire">
+                        <img src="./assets/images/fire.png" alt="" />
+                      </div>
+                      <div class="socials">
+                        <a href="#" class="item">
+                          <img
+                            src="./assets/images/services/telegram.svg"
+                            alt=""
+                          />
+                        </a>
+                        <a href="#" class="item">
+                          <img
+                            src="./assets/images/services/whatsapp.svg"
+                            alt=""
+                          />
+                        </a>
+                        <a href="#" class="item">
+                          <img
+                            src="./assets/images/services/google-white_bg.svg"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <!-- <div class="autoplay-progress">
+                  <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                  </svg>
+                  <span></span>
+                </div> -->
+              </div>
+            </article>
+
             <article id="grid3">
               <div class="item item1">
                 <div class="num">1</div>
@@ -89,52 +145,7 @@
                 </div>
               </div>
             </article>
-            <article class="article blue blue-bg" id="socials">
-              <div class="text">
-                <h1 class="title">
-                  3 for the price of 0, have time to pick up our software!
-                </h1>
-                <a href="#" class="btn demo-accent">Take a look</a>
-              </div>
-              <div class="fire">
-                <img src="./assets/images/fire.png" alt="" />
-              </div>
-              <div class="socials">
-                <a href="#" class="item">
-                  <img src="./assets/images/services/telegram.svg" alt="" />
-                </a>
-                <a href="#" class="item">
-                  <img src="./assets/images/services/whatsapp.svg" alt="" />
-                </a>
-                <a href="#" class="item">
-                  <img
-                    src="./assets/images/services/google-white_bg.svg"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </article>
-            <article id="grid2">
-              <div class="item item1">
-                <img class="item-bg" src="./assets/images/about-1.png" alt="" />
-                <div class="text">
-                  <h2 class="title">Quickly</h2>
-                  <p class="paragraph">
-                    Verification of any service will take you 1 minute, our
-                    services work very fast.
-                  </p>
-                </div>
-              </div>
-              <div class="item item2">
-                <img class="item-bg" src="./assets/images/about-2.png" alt="" />
-                <div class="text">
-                  <h2 class="title">High Quality</h2>
-                  <p class="paragraph">
-                    We are working on the quality of services!
-                  </p>
-                </div>
-              </div>
-            </article>
+
             <article class="article white" id="advantages">
               <h2 class="title black">Advantages</h2>
               <ul class="advantages-list">
@@ -334,5 +345,56 @@
     <footer class="footer" id="footer"></footer>
 
     <script src="./assets/js/accordion.js"></script>
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+    <script>
+      const progressCircle = document.querySelector(".autoplay-progress svg");
+      const progressContent = document.querySelector(".autoplay-progress span");
+
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 9000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        // on: {
+        //   autoplayTimeLeft(s, time, progress) {
+        //     progressCircle.style.setProperty("--progress", 1 - progress);
+        //     progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        //   },
+        // },
+        // Это короче визуальный таймер. Хз нужен он нет, можешь его спросить если хочешь. Посмотри как это выглядит:
+        // https://codesandbox.io/p/sandbox/kd5g73?file=/index.html
+      });
+    </script>
+    <script>
+      function updateContentWidth() {
+        var containerWidth = $(".container").width();
+        var sidebarWidth = $(".sidebar").width();
+        var newContentWidth = containerWidth - sidebarWidth - 26;
+
+        if ($(window).width() < 720) {
+          $(".content").css("max-width", "100%");
+        } else {
+          $(".content").css("max-width", newContentWidth + "px");
+        }
+      }
+
+      $(document).ready(function () {
+        updateContentWidth();
+      });
+
+      $(window).resize(function () {
+        updateContentWidth();
+      });
+    </script>
   </body>
 </html>
