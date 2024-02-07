@@ -2767,6 +2767,10 @@ form:has(.content) {
     overflow-x: auto;
     max-width: 100%;
   }
+
+  .payment-content {
+    padding-top: 95px;
+  }
 }
 
 .swiper-slide {
